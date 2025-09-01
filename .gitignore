@@ -1,0 +1,41 @@
+# ---- python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# virtual envs
+.venv/
+venv/
+ENV/
+env/
+
+# pytest / coverage / mypy caches
+.coverage
+htmlcov/
+.mypy_cache/
+.pytest_cache/
+.dmypy.json
+.dmypy/
+
+# jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# ---- docker ----
+.dockerignore
+.last_bucket   # temp file storing last created bucket
+
+# ---- env / secrets ----
+.env
+*.env
+
+# ---- os / editor cruft ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
