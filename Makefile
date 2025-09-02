@@ -1,5 +1,5 @@
 # ---- config ----
-IMAGE = s3cli:dev
+IMAGE = buckets:dev
 AWS_DIR = $(HOME)/.aws
 PROFILE = default
 REGION = us-east-1
