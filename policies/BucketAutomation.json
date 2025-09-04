@@ -1,0 +1,34 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "S3BucketsWithPrefix",
+            "Effect": "Allow",
+            "Action": [
+                "s3:CreateBucket",
+                "s3:DeleteBucket",
+                "s3:PutBucketTagging",
+                "s3:ListBucket",
+                "s3:ListBucketVersions",
+                "s3:DeleteObject",
+                "s3:DeleteObjectVersion",
+                "s3:PutBucketPublicAccessBlock",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:ListBucketMultipartUploads",
+                "s3:PutEncryptionConfiguration",
+                "s3:GetEncryptionConfiguration"
+            ],
+            "Resource": "arn:aws:s3:::learn-*"
+        },
+        {
+            "Sid": "ReadSlackSecret",
+            "Effect": "Allow",
+            "Action": [
+                "secretsmanager:GetSecretValue"
+            ],
+            "Resource": [
+                "arn:aws:secretsmanager:us-east-1:723237626869:secret:slack/bot/prod-QvAOBl"
+            ]
+        }
+    ]
+}
