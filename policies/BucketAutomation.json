@@ -27,7 +27,7 @@
                 "secretsmanager:GetSecretValue"
             ],
             "Resource": [
-                "arn:aws:secretsmanager:us-east-1:723237626869:secret:slack/bot/prod-QvAOBl"
+                "arn:aws:secretsmanager:us-east-1:xxxxxx:secret:slack/bot/prod-xxxxxx"
             ]
         }
     ]
